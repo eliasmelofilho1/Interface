@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="Stylesheet" type="text/css" href="../style.css"/>
+</head>
+<body>
+    <a href="../index.html" target="_blank">
+        Acesse a página principal 
+    </a>
+    <br />
+    <br />
+    <!--Formulário-->
+    <h2 align="center">Formulário</h2>
+    <form action="arquivo.sql" method="post">
+        <p>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" size="60"/></p>
+
+        <p>Telefone: <input type="tel" placeholder="00000000000" maxlength="11"/></p>
+
+        <p>Data de Nascimento: <input type="date"/></p>
+
+        <p>Senha: <input type="password" maxlength="8"/>
+            <small>A senha só poderá ter até 8 caracteres</small></p>
+
+        <p>Email: <input type="email"/></p>
+
+        <p>Idade: <input type="number"/></p>
+
+        Comentários:
+        <textarea rows="20" cols="30"></textarea>
+        <!--Estrutura de Seleção-->
+        <p> Time de Futebol:
+            <select>
+                <option></option>
+                <option value="Botafogo">Botafogo</option>
+                <option value="Vasco">Vasco</option>
+                <option value="Flamengo">Flamengo</option>
+            </select>
+        </p>
+        <!--Estrutura de Opções-->
+        <p> Estados Brasileiros:
+            <br />
+            <input type="radio" name="Estados" value=""/> Goiás 
+            <br />
+            <input type="radio" name="Estados"/> Mato Grosso
+            <br />
+            <input type="radio" name="Estados"/> São Paulo
+            <br />
+            <input type="radio" name="Estados"/> Acre
+        </p> 
+        <!--CheckBox-->
+        <p>
+            <input type="checkbox" name="Confirmar"/> 
+            Aceito fazer parte da Ceita do HTML!!!
+        </p>
+        <input type="reset"/>
+        <input type="submit"/>
+        <br />
+        <br />
+        <br />
+        <!--Fieldset-->
+        <fieldset>
+            <legend align="center">Dados Pessoais</legend>
+        <label>Nome: <input type="text"/></label>
+        <label>CPF:  <input type="text"/></label>
+        </fieldset>
+    </form>
+</body>
+</html>
